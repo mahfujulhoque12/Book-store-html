@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book store</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/fontawesome.min.css">
+
+
+
+</head>
+
+<body>
+  <!-- top navbar  start -->
+  <nav>
+    <div class="container">
+      <div class="row mt-2">
+        <div class="col-md-2">
+          <a class="navbar-brand" href="#">
+            <img src="/img/top-logo.png" class="img-fluid" alt="">
+          </a>
+        </div>
+        <div class="col-md-6">
+          <div class="category mt-2">
+            <div class="dropdown  ms-1">
+              <button class="dropbtn">
+                <img src="/img/category.png" alt=""> Categories <i class="fas ms-1 category-icon fa-chevron-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div>
+            <p class="right-height"></p>
+            <div class="search-div d-flex mt-2 m-0 justify-content-between ms-4">
+              <p class="author">Author</p>
+              <span class="search me-3"><i class="fas fa-search"></i></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="info d-flex mt-2">
+            <div class="call d-flex gap-3">
+              <img src="/img/phone_icon.png" class="call-img" alt="">
+              <div class="call-info">
+                <p class="call-us m-0 ">Call Us Now</p>
+                <p class="number"> +208-555-0112</p>
+              </div>
+            </div>
+            <p class="right-height right-height-two"></p>
+            <div class="ms-3 mt-2">
+              <span class="cart me-2 zero">
+                <i class="fas fa-heart"></i>
+                <span class="zero-setup">0</span>
+
+              </span>
+              <span class="cart me-2 zero">
+                <i class="fas fa-cart-plus"></i>
+                <span class="zero-setup">0</span>
+              </span>
+              <span class="cart last-cart">
+                <i class="fas fa-stream"></i>
+
+              </span>
+
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+      </div>
+    </div>
+  </nav>
+  <!-- top navbar end -->
+
+  <!-- bottom navbar start -->
+  <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav> -->
+
+  <div class="bottom-nav mt-3">
+    <div class="container d-flex">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+      <button class="navbar-toggler bg-warning text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i class="fas fa-bars mt-1"></i></span>
+      </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+              <li class="nav-item dropdown custom-dropdown-position">
+                <a class="nav-link dropdown-toggle custom-dropdown navbarDropdown" href="#" id="navbarDropdown"
+                  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="/img/all-category.png" class="all-category-logo" alt=""> All Categories <i
+                    class="fas all-category-icon fa-chevron-down"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-custom" aria-labelledby="navbarDropdown">
+                  <li> <a class="dropdown-item drop-digit-positon" href="#"><img src="/img/toys.png" class="toys"
+                        alt=""> Toys and learning <span class="drop-digit">(8)</span></a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li> <a class="dropdown-item drop-digit-positon" href="#"><i class="fas fa-tshirt drop-icons"></i>
+                      Children's clothing <span class="drop-digit">(5)</span></a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+
+                  <li> <a class="dropdown-item drop-digit-positon" href="#"><i
+                        class="fas fa-book-reader  drop-icons"></i> Kids Books <span class="drop-digit">(7)</span></a>
+                  </li>
+
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+
+                  <li> <a class="dropdown-item drop-digit-positon" href="#"><img src="/img/movemont.png" class="toys"
+                        alt=""> Movement Toys <span class="drop-digit">(3)</span></a></li>
+
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+
+                  <li> <a class="dropdown-item drop-digit-positon" href="#"><img src="/img/play.png" class="toys" />
+                      Indoor Play <span class="drop-digit">(4)</span></a></li>
+
+
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+
+                  <li> <a class="dropdown-item drop-digit-positon" href="#">
+                      <i class="fas fa-puzzle-piece drop-icons"></i>
+                      Games and puzzle <span class="drop-digit">(2)</span></a></li>
+
+
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+
+                  <li> <a class="dropdown-item drop-digit-positon" href="#">
+                      <i class="fas fa-car-side  drop-icons"></i>
+                      Vehicles Toys <span class="drop-digit">(1)</span></a></li>
+
+
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+
+                  <li> <a class="dropdown-item drop-digit-positon" href="#"><img src="/img/high-end.png" class="toys" />
+                      High-end machinery <span class="drop-digit">(6)</span></a></li>
+
+                </ul>
+              </li>
+              <li class="nav-item dropdown  home-drop">
+                <a class="nav-link dropdown-toggle others-link" href="#" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Home <i class="fas other-drop fa-chevron-down"></i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown me-2">
+                <a class="nav-link dropdown-toggle others-link" href="#" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Shop <i class="fas other-drop fa-chevron-down"></i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown me-2 ">
+                <a class="nav-link dropdown-toggle others-link" href="#" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Pages <i class="fas other-drop fa-chevron-down"></i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown me-2">
+                <a class="nav-link dropdown-toggle others-link" href="#" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Blog <i class="fas other-drop fa-chevron-down"></i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link others-link" href="#">Contact Us</a>
+              </li>
+
+            </ul>
+           
+          </div>
+        </div>
+        
+      </nav>
+      <div class="d-flex user-login gap-3 mt-3">
+        <div class="d-flex gap-2 mt-1">
+          <i class="fas fa-sms text-light mt-1"></i>
+          <p class="text-light">Help</p>
+        </div>
+        <div class="d-flex gap-2 mt-1">
+          <i class="fas fa-user text-light mt-1"></i>
+          <p class="text-light">Login</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- bottom navbar end -->
+
+  <!-- hero start -->
+  <section>
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-9 hero-main">
+          <div class="row hero-right">
+            <div class="col-md-6">
+              <img src="/img/hero-left.png" class="hero-left-img" alt="">
+              <p class="hero-discount"> Up to 30% Off</p>
+              <h2 class="hero-left-h2">Get Your New Book Whit The Best Price</h2>
+              <button class="btn btn-light shop-now">Shop Now <i class="fas fa-long-arrow-alt-right"></i></button>
+            </div>
+            <div class="col-md-6 hero-sec-right">
+              <img src="/img/hero-img.png" class="hero-img" alt="">
+              <img src="/img/hero-tir.png" class="hero-tir" alt="">
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- hero end -->
+
+  <!-- refund start  -->
+  <section>
+    <div class="container mt-4 retrun-refund mb-5">
+      <div class="row">
+        <div class="col-md-6 col-lg-3 d-flex py-3 gap-2 return-position">
+          <div class="return-div">
+            <i class="fas fa-truck-moving return-icon"></i>
+          </div>
+          <div class="return-content">
+            <p class="m-0">Return & refund</p>
+            <span class="m-0">Money back guarantee</span>
+          </div>
+          <p class="return-height"></p>
+        </div>
+        <div class="col-md-6  col-lg-3 d-flex py-3 gap-2 return-position">
+          <div class="return-div">
+            <i class="fas fa-shield-alt return-icon"></i>
+          </div>
+          <div class="return-content">
+            <p class="m-0">Secure Payment</p>
+            <span class="m-0">30% off by subscribing</span>
+          </div>
+          <p class="return-height"></p>
+        </div>
+        <div class="col-md-6  col-lg-3 d-flex py-3 gap-2 return-position">
+          <div class="return-div">
+            <i class="fas fas fa-headset return-icon"></i>
+          </div>
+          <div class="return-content">
+            <p class="m-0">Quality Support</p>
+            <span class="m-0">Always online 24/7</span>
+          </div>
+          <p class="return-height"></p>
+        </div>
+        <div class="col-md-6  col-lg-3 d-flex py-3 gap-2 return-position">
+          <div class="return-div">
+            <i class="fas fas fa-tags return-icon"></i>
+          </div>
+          <div class="return-content">
+            <p class="m-0">Daily Offers</p>
+            <span class="m-0">20% off by subscribing</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- refund end -->
+
+  <!-- Trending  start -->
+  <section>
+    <div class="container mb-5">
+      <div class="row">
+        <div class="d-flex justify-content-between mb-4 trading">
+          <h1 class="tranding-h1">Trending on Mamaya</h1>
+          <button class="btn explore-btn">Explore more <i class="fas fa-long-arrow-alt-right"></i></button>
+        </div>
+        <div class=" col-lg-20 custom   col-sm-custom">
+          <div class="trand-div">
+          <div class="trand-col">
+            <div class="trand-icon">
+              <i class="fas fa-heart "></i>
+            </div>
+            <div class="trand-icon sec-trand-icon">
+              <i class="fas  fa-pencil-ruler"></i>
+            </div>
+            <div class="trand-icon third-trand-icon">
+              <i class="fas fas fa-eye"></i>
+            </div>
+            <p class="hot">Hot</p>
+            <p class="hot discount">-30%</p>
+            <img src="/img/t1.png" alt="">
+          </div>
+          <h3>Simple Things You To Save BOOK</h3>
+          <div class=" d-flex justify-content-between">
+            <p class="price">$30.00</p>
+            <p class="rating"><i class="fas fa-star rating-icon"></i> 3.4(25)</p>
+          </div>
+          <button class="btn rating-btn"> <i class="fas fa-shopping-basket"></i> Add to Cart</button>
+          </div>
+      </div>
+      <div class=" col-lg-20 custom  col-sm-custom">
+        <div class="trand-div">
+          <div class="trand-col">
+            <div class="trand-icon">
+              <i class="fas fa-heart "></i>
+            </div>
+            <div class="trand-icon sec-trand-icon">
+              <i class="fas  fa-pencil-ruler"></i>
+            </div>
+            <div class="trand-icon third-trand-icon">
+              <i class="fas fas fa-eye"></i>
+            </div>
+            <p class="hot">Hot</p>
+            <p class="hot discount">-30%</p>
+            <img src="/img/t1.png" alt="">
+          </div>
+          <h3>Simple Things You To Save BOOK</h3>
+          <div class=" d-flex justify-content-between">
+            <p class="price">$30.00</p>
+            <p class="rating"><i class="fas fa-star rating-icon"></i> 3.4(25)</p>
+          </div>
+          <button class="btn rating-btn"> <i class="fas fa-shopping-basket"></i> Add to Cart</button>
+          </div>
+      </div>
+      <div class=" col-lg-20 custom  col-sm-custom ">
+        <div class="trand-div">
+          <div class="trand-col">
+            <div class="trand-icon">
+              <i class="fas fa-heart "></i>
+            </div>
+            <div class="trand-icon sec-trand-icon">
+              <i class="fas  fa-pencil-ruler"></i>
+            </div>
+            <div class="trand-icon third-trand-icon">
+              <i class="fas fas fa-eye"></i>
+            </div>
+            <p class="hot">Hot</p>
+            <p class="hot discount">-30%</p>
+            <img src="/img/t1.png" alt="">
+          </div>
+          <h3>Simple Things You To Save BOOK</h3>
+          <div class=" d-flex justify-content-between">
+            <p class="price">$30.00</p>
+            <p class="rating"><i class="fas fa-star rating-icon"></i> 3.4(25)</p>
+          </div>
+          <button class="btn rating-btn"> <i class="fas fa-shopping-basket"></i> Add to Cart</button>
+          </div>
+      </div>
+      <div class=" col-lg-20 custom  col-sm-custom">
+        <div class="trand-div">
+          <div class="trand-col">
+            <div class="trand-icon">
+              <i class="fas fa-heart "></i>
+            </div>
+            <div class="trand-icon sec-trand-icon">
+              <i class="fas  fa-pencil-ruler"></i>
+            </div>
+            <div class="trand-icon third-trand-icon">
+              <i class="fas fas fa-eye"></i>
+            </div>
+            <p class="hot">Hot</p>
+            <p class="hot discount">-30%</p>
+            <img src="/img/t1.png" alt="">
+          </div>
+          <h3>Simple Things You To Save BOOK</h3>
+          <div class=" d-flex justify-content-between">
+            <p class="price">$30.00</p>
+            <p class="rating"><i class="fas fa-star rating-icon"></i> 3.4(25)</p>
+          </div>
+          <button class="btn rating-btn"> <i class="fas fa-shopping-basket"></i> Add to Cart</button>
+          </div>
+      </div>
+      <div class=" col-lg-20 custom  col-sm-custom">
+        <div class="trand-div">
+          <div class="trand-col">
+            <div class="trand-icon">
+              <i class="fas fa-heart "></i>
+            </div>
+            <div class="trand-icon sec-trand-icon">
+              <i class="fas  fa-pencil-ruler"></i>
+            </div>
+            <div class="trand-icon third-trand-icon">
+              <i class="fas fas fa-eye"></i>
+            </div>
+            <p class="hot">Hot</p>
+            <p class="hot discount">-30%</p>
+            <img src="/img/t1.png" alt="">
+          </div>
+          <h3>Simple Things You To Save BOOK</h3>
+          <div class=" d-flex justify-content-between">
+            <p class="price">$30.00</p>
+            <p class="rating"><i class="fas fa-star rating-icon"></i> 3.4(25)</p>
+          </div>
+          <button class="btn rating-btn"> <i class="fas fa-shopping-basket"></i> Add to Cart</button>
+          </div>
+      </div>
+  </div>
+      </div>
+    </div>
+  </section>
+  <!-- Trending  end -->
+
+
+
+  <script src="js/script.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/fontawesome.min.js"></script>
+
+
+
+
+
+  
+</body>
+
+</html>

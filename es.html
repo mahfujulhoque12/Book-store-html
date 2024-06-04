@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar Example</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+</head>
+
+<body>
+  <div class="bottom-nav mt-3">
+    <div class="container  d-flex flex-row">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown custom-dropdown-position">
+                <a class="nav-link dropdown-toggle custom-dropdown navbarDropdown" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                  <img src="/img/all-category.png" class="all-category-logo" alt=""> All Categories <i class="fas all-category-icon fa-chevron-down"></i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item drop-digit-positon" href="#"><img src="/img/toys.png" class="toys" alt=""> Toys and learning <span class="drop-digit">(8)</span></a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item drop-digit-positon" href="#"><i class="fas fa-tshirt drop-icons"></i> Children's clothing <span class="drop-digit">(5)</span></a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item drop-digit-positon" href="#"><i class="fas fa-book-reader drop-icons"></i> Kids Books <span class="drop-digit">(7)</span></a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item drop-digit-positon" href="#"><img src="/img/movemont.png" class="toys" alt=""> Movement Toys <span class="drop-digit">(3)</span></a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item drop-digit-positon" href="#"><img src="/img/play.png" class="toys" alt=""> Indoor Play <span class="drop-digit">(4)</span></a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item drop-digit-positon" href="#"><i class="fas fa-puzzle-piece drop-icons"></i> Games and puzzle <span class="drop-digit">(2)</span></a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item drop-digit-positon" href="#"><i class="fas fa-car-side drop-icons"></i> Vehicles Toys <span class="drop-digit">(1)</span></a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item drop-digit-positon" href="#"><img src="/img/high-end.png" class="toys" alt=""> High-end machinery <span class="drop-digit">(6)</span></a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown home-drop">
+                <a class="nav-link dropdown-toggle others-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                  Home <i class="fas other-drop fa-chevron-down"></i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown me-2">
+                <a class="nav-link dropdown-toggle others-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                  Shop <i class="fas other-drop fa-chevron-down"></i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown me-2">
+                <a class="nav-link dropdown-toggle others-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                  Pages <i class="fas other-drop fa-chevron-down"></i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown me-2">
+                <a class="nav-link dropdown-toggle others-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                  Blog <i class="fas other-drop fa-chevron-down"></i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link others-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+           
+          </div>
+        
+        </div>
+       
+      </nav>
+      <div class="d-flex gap-3">
+        <div class="d-flex gap-2 mt-1">
+          <i class="fas fa-sms text-light mt-1"></i>
+          <p class="text-dark">Help</p>
+        </div>
+        <div class="d-flex gap-2 mt-1">
+          <i class="fas fa-user text-light mt-1"></i>
+          <p class="text-dark">Login</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
